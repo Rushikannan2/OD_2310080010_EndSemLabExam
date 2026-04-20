@@ -1,0 +1,73 @@
+📌 Overview
+
+This project implements a Smart Parking Detection System using basic Computer Vision techniques. It processes parking images, detects vehicles, visualizes parking slots, and evaluates performance under different conditions.
+
+🎯 Objectives
+Preprocess parking images
+Detect vehicles using HOG + Sliding Window
+Visualize parking slots using bounding boxes
+Implement object detection (SSD/YOLO concept)
+Evaluate using IoU and Precision
+Analyze performance under lighting variations
+🗂️ Dataset
+
+Images used:
+
+park1.jpg
+park2.jpg
+park3.jpg
+
+Path:
+
+/content/drive/MyDrive/OD_EndSemLab/
+⚙️ Technologies Used
+Python
+OpenCV
+NumPy
+Matplotlib
+🔧 Implementation
+1️⃣ Preprocessing
+Grayscale conversion
+Gaussian / Median filtering
+Thresholding
+2️⃣ Vehicle Detection
+HOG (Histogram of Oriented Gradients)
+Sliding Window approach
+Bounding box detection
+3️⃣ Parking Slot Visualization
+Manual slot coordinates
+Rectangle drawing using OpenCV
+4️⃣ Object Detection (SSD Concept)
+Lightweight detection using OpenCV
+Bounding boxes for vehicles
+5️⃣ Evaluation Metrics
+IoU (Intersection over Union)
+Precision
+6️⃣ Performance Analysis
+Tested under:
+Bright lighting
+Dark lighting
+Observation:
+Bright → better detection
+Dark → reduced accuracy
+📊 Results
+Vehicles detected using sliding window
+Parking slots visualized successfully
+Detection performance varies with lighting conditions
+🧠 Key Learnings
+Importance of preprocessing
+Role of feature extraction (HOG)
+Limitations of traditional methods
+Need for deep learning (YOLO/SSD)
+🚀 Future Improvements
+Use YOLOv5 / YOLOv8 for accurate detection
+Real-time parking monitoring
+Integration with IoT sensors
+Automatic empty slot detection
+📌 Conclusion
+
+The system demonstrates how Computer Vision techniques can be applied to parking detection. While basic methods work, deep learning models significantly improve accuracy.
+
+👨‍💻 Author
+
+Rushi Kannan
